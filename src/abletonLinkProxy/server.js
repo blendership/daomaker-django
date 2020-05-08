@@ -56,4 +56,29 @@ const Server = {
       if(Server.numPeers > 0){
 
         Server.io.emit('beat', { bpm, bps, beat: beatInt, phase: phaseDecimal, beatStartTime});
-        // console.log(`New beatInt ${beatInt} beatStartTime ${beatStar
+        // console.log(`New beatInt ${beatInt} beatStartTime ${beatStartTime} phaseDecimal ${phaseDecimal} bps ${bps}`);
+
+      }
+
+    });
+
+    return new Promise((resolve) => {
+
+      Server.http.listen(port, () => {
+
+        Server.port = Server.http.address().port;
+        console.log(`AbletonLink proxy listen on localhost:${Server.port}`);
+        resolve();
+
+      });
+
+    });
+
+
+  },
+  async stop(){
+
+  }
+};
+
+module.exports = Server;
