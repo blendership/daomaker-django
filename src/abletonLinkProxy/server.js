@@ -36,4 +36,24 @@ const Server = {
 
       Server.numPeers = numPeers;
       console.log('NumPeers', numPeers);
-      Server.
+      Server.io.emit('numPeers', Server.numPeers);
+
+    });
+
+    Server.link.startUpdate(100, (beat, phase, bpm) => {
+
+      //console.log(`beat ${beat} phase ${phase} bpm ${bpm}`);
+
+      const beatInt = Math.floor(beat);
+      if((beatInt - Server.lastBeat) <= 0) return;
+      Server.lastBeat = beatInt;
+
+      const bps = bpm / 60;
+      const phaseDecimal = phase - Math.floor(phase);
+      const phaseMillisecond = phaseDecimal/bps;
+      const beatStartTime = Date.now() - phaseMillisecond;
+
+      if(Server.numPeers > 0){
+
+        Server.io.emit('beat', { bpm, bps, beat: beatInt, phase: phaseDecimal, beatStartTime});
+        // console.log(`New beatInt ${beatInt} beatStartTime ${beatStar
