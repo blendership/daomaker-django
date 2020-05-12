@@ -33,4 +33,27 @@
                     pa-2
                   >
                     <v-layout fill-height>
-           
+                      <v-flex
+                        xs12
+                        align-end
+                        flexbox
+                      >
+                        <span
+                          class="headline white--text"
+                          :style="[$vuetify.breakpoint.xsOnly ? { 'font-size': '16px!important' } : '']"
+                          v-text="visualization.name || ''"
+                        />
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
+                </v-img>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
+    </v-flex>
+  </v-layout>
+</template>
+
+<style scoped>
