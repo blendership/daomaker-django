@@ -29,4 +29,32 @@
         >
           <img
             alt="logo"
-            src="@/asse
+            src="@/assets/logo-32.png"
+            class="title-logo hidden-xs-only"
+          >
+          Acidoscope
+          <img
+            alt="logo"
+            src="@/assets/logo-32.png"
+            class="title-logo flip hidden-xs-only"
+          >
+        </v-btn>
+      </v-container>
+    </v-flex>
+    <v-flex sm2 order-sm3 class="hidden-md-and-up hidden-xs-only">
+    </v-flex>
+    <v-flex md3 order-md3 class="hidden-sm-and-down">
+      <Loaders />
+    </v-flex>
+  </v-layout>
+</template>
+
+<style scoped>
+  .app-name {
+    font-size: 3.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: none;
+    /* font-family: 'Jura', sans-serif; */
+    font-family: 'Poiret One', cursive;
+    /* font-family: 'Orbitron', sans-serif
