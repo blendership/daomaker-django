@@ -57,3 +57,40 @@
 </template>
 
 <style scoped>
+  .gallery-container {
+    margin-top: 50px;
+  }
+</style>
+
+<script>
+
+  import { mapGetters, mapActions } from 'vuex';
+
+  export default {
+    name: 'Gallery',
+    computed: {
+      ...mapGetters([
+        'visualizationsArray',
+      ])
+    },
+    mounted: async function () {
+
+      this.loadVisualisations();
+
+    },
+    methods: {
+      ...mapActions([
+        'loadVisualisations'
+      ]),
+      getShaderScreenshots(id) {
+
+        try {
+          return require(`@/assets/shaderScreenshots/${id}.jpg`);
+        } catch(e) {
+          return require(`@/assets/shaderScreenshots/default.jpg`);
+        }
+
+      }
+    }
+  }
+</script>
