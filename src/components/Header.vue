@@ -57,4 +57,35 @@
     text-transform: none;
     /* font-family: 'Jura', sans-serif; */
     font-family: 'Poiret One', cursive;
-    /* font-family: 'Orbitron', sans-serif
+    /* font-family: 'Orbitron', sans-serif; */
+  }
+  .title-logo {
+    margin: 8px;
+  }
+  .flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  @media only screen and (max-width: 600px) {
+    .no-padding-xs {
+      padding: 0;
+    }
+  }
+</style>
+
+<script>
+
+  import Loaders from '@/components/Loaders.vue';
+
+  export default {
+    name: 'Gallery',
+    components: {
+      Loaders: Loaders
+    },
+  }
+
+</script>
