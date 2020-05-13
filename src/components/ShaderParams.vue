@@ -29,3 +29,40 @@
           >{{ param.name }}</span>
         </v-layout>
       </v-flex>
+    </v-layout>
+  </v-container>
+</template>
+
+<script>
+  import { mapGetters, mapActions } from 'vuex';
+  import CircularSlider from '@/components/CircularSlider.vue'
+
+  export default {
+    name: 'ShaderParams',
+    components: {
+      CircularSlider
+    },
+    computed: {
+      ...mapGetters([
+        'paramsList',
+        'getParamValue',
+      ]),
+    },
+    methods: {
+      ...mapActions([
+        'loadVisualisations',
+        'changeParamValue'
+      ]),
+      onControlChange: function(paramName, value){
+
+        this.changeParamValue({
+          paramName,
+          action: 'value',
+          value
+        });
+
+      }
+    }
+  };
+
+</script>
