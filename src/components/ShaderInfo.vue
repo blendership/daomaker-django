@@ -29,4 +29,41 @@
               dark
             >
               open_in_new
-        
+            </v-icon>
+            Original shader
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+  </v-container>
+</template>
+
+<style scoped>
+  .shader-info{
+  }
+</style>
+
+<script>
+
+  import { mapGetters } from 'vuex';
+
+  export default {
+    name: 'ShaderInfo',
+    computed: {
+      ...mapGetters([
+        'selectedVisualization',
+      ]),
+    },
+    methods: {
+      getShaderScreenshots(id) {
+
+        try {
+          return require(`@/assets/shaderScreenshots/${id}.jpg`);
+        } catch(e) {
+          return require(`@/assets/shaderScreenshots/default.jpg`);
+        }
+
+      }
+    }
+  }
+</script>
