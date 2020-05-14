@@ -57,4 +57,24 @@ ${ImageWrapper}
 #define VR_SETTINGS_CARDBOARD
 //#define VR_SETTINGS_USE_MOUSE
 #define VR_SETTINGS_FIXED_ROTATION
-//#define VR_SETTINGS_DEVICE_ORIE
+//#define VR_SETTINGS_DEVICE_ORIENTATION
+
+${VRWrapper}
+
+`;
+      }
+
+    }
+    return fragmentShader;
+
+  }
+
+  getVertexShader() {
+    return this.shaderEngine.shader.vertexShader ?
+      this.shaderEngine.shader.vertexShader :
+      DefaultVertex;
+  }
+
+}
+
+export default GlslWrapper;
