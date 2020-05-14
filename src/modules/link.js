@@ -1,2 +1,46 @@
 import { EventEmitter } from 'events';
-impor
+import io from "socket.io-client";
+
+const log = console.log.bind(null, '[LINK]:');
+
+class Link extends EventEmitter {
+
+  constructor({ uri }){
+
+    super();
+    this.uri = uri || 'http://localhost:3000';
+    this.socket = null;
+
+  }
+
+  init(){
+
+    if(this.socket) return;
+
+    try {
+
+      this.socket = io.connect(this.uri);
+
+      this.socket.on('connect', () => {
+
+        log('Link connected');
+        this.emit('statusChanged', true);
+
+      });
+
+      this.socket.on('disconnect', () => {
+
+        log('Link disconnected');
+        this.emit('statusChanged', false);
+
+      });
+
+      this.socket.on('beat', (beatData) => {
+
+        this.emit('beat', beatData);
+
+      });
+
+      this.socket.on('numPeers', (numPeers) => {
+
+      
