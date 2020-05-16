@@ -43,4 +43,28 @@ class Link extends EventEmitter {
 
       this.socket.on('numPeers', (numPeers) => {
 
-      
+        this.emit('numPeers', numPeers);
+
+      });
+
+    }
+
+    catch(error) {
+
+      // If not connected, wait connection then start listening
+      // const unlistenStatus = Midi.listenStatus(hardwareStatus => {
+      //   if(hardwareStatus.connected) {
+      //     startListening();
+      //     unlistenStatus();
+      //   }
+      // });
+      // Midi.unlisteners.push(unlistenStatus); // Maybe have been unlistened previously
+
+    }
+
+  }
+
+
+}
+
+export default Link;
