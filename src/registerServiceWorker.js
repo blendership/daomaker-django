@@ -25,4 +25,10 @@ if (Config.ENV === 'production' && !Config.IS_ELECTRON) {
       console.log('New content is available; please refresh.')
     },
     offline () {
-      consol
+      console.log('No internet connection found. App is running in offline mode.')
+    },
+    error (error) {
+      console.error('Error during service worker registration:', error)
+    }
+  })
+}
