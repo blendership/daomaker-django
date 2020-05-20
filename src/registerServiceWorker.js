@@ -1,3 +1,28 @@
 /* eslint-disable no-console */
 
-import
+import { register } from 'register-service-worker'
+import Config from '@/../config';
+
+
+if (Config.ENV === 'production' && !Config.IS_ELECTRON) {
+  register(`${window.location.href}service-worker.js`, {
+    ready () {
+      console.log(
+        'App is being served from cache by a service worker.\n' +
+        'For more details, visit https://goo.gl/AFskqB'
+      )
+    },
+    registered () {
+      console.log('Service worker has been registered.')
+    },
+    cached () {
+      console.log('Content has been cached for offline use.')
+    },
+    updatefound () {
+      console.log('New content is downloading.')
+    },
+    updated () {
+      console.log('New content is available; please refresh.')
+    },
+    offline () {
+      consol
