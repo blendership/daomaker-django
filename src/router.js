@@ -20,4 +20,18 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: () => import(/* webpackChunkName
+      component: () => import(/* webpackChunkName: "shader" */ './views/About.vue'),
+    },
+    {
+      path: "*",
+      redirect: '/'
+    }
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
+});
