@@ -9,4 +9,17 @@ import shader8 from '@/shaders/shader8';
 import shader9 from '@/shaders/shader9';
 import shader10 from '@/shaders/shader10';
 
-cons
+const shaders = {
+  shader1,
+  shader2,
+  shader3,
+  shader4,
+  shader5,
+  shader6,
+  shader7,
+  shader8,
+  shader9,
+  shader10,
+};
+
+export default shaders;
