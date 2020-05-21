@@ -43,3 +43,40 @@ void mainImage(out vec4 fragColor, vec2 fragCoord ) {
 
     g += 0.05*(1.0 - d);
   }
+
+  g = clamp(g, 0.0, 1.0);
+
+
+  vec3 col = vec3(0);
+  vec3 mat = vec3(0);
+
+  if(t < 10.0) {
+    // geometry
+    vec3 pos = ro + rd*t;
+    vec2 h = vec2(0.001, 0.0);
+    vec3 nor =  normalize(vec3(
+    de(pos + h.xyy) - de(pos - h.xyy),
+    de(pos + h.yxy) - de(pos - h.yxy),
+    de(pos + h.yyx) - de(pos - h.yyx)));
+
+    // two lights, key and ground light.
+    vec3 key = normalize(vec3(0.8, 0.7, -0.6));
+    vec3 gro = vec3(0, -1, 0);
+
+    // apply lighting (ambient, key diffuse, bac diffuse, gr diffuse)
+    col = 0.2*vec3(1);
+    col += 0.7*clamp(dot(key, nor), 0.0, 1.0);
+    col += 0.5*clamp(0.2 + 0.8*dot(-key, nor), 0.0, 1.0);
+    col += 0.3*clamp(dot(gro, nor), 0.0, 1.0);
+
+    // material based on orbit trap.
+    mat = mix(vec3(0, 0.3, 1), vec3(1, 0.2, 0.2), 4.0*orb);
+    col *= mat;
+  }
+
+  col += g*mat; // glow.
+  col = mix(col, vec3(1), 1.0 - exp(-0.1*t)); // distance fog.
+  col = sqrt(col); // gamma correction.
+
+  fragColor = vec4(col, 1);
+}
