@@ -141,3 +141,29 @@ mat3 setCamera( in vec3 ro, in vec3 ta, float cr ) // by iq
   vec3 cv = normalize( cross(cu,cw) );
   return mat3( cu, cv, cw );
 }
+
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+  vec2 p = (-resolution.xy + 2.0*fragCoord.xy)/ resolution.y;
+
+  vec2 m = mouse.xy/resolution.xy;
+  float t = 1. + abs(sin(phase*PI + PI/2.));
+
+  // camera
+  vec3 ro = 4.0*normalize(vec3(sin(3.0*m.x), 0.4*m.y, cos(3.0*m.x)));
+  vec3 ta = vec3(-3.0*cos(time*0.1), -1.0, 0.0);
+  mat3 ca = setCamera( ro, ta, 0.0 );
+  // ray
+  vec3 rd = ca * normalize( vec3(p.xy,2.0));
+
+  ro.z -= time;
+
+  fragColor = trace_spheres( ro + vec3(0.5, 1.5, 0.0 + t), rd );
+}
+
+void mainVR( out vec4 fragColor, in vec2 fragCoord, in vec3 fragRayOri, in vec3 fragRayDir )
+{
+  vec3 ro = fragRayOri + vec3(time, 0., 0.);
+  fragColor = trace_spheres( ro, fragRayDir );
+}
