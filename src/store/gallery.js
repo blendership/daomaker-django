@@ -48,4 +48,24 @@ const GalleryModule = {
 
     setVisualisation({ state, commit }, visualisationId) {
 
-      cons
+      const visualisation = state.visualizations[visualisationId];
+      if(visualisation) {
+        commit('setVisualisationId', visualisationId);
+      } else {
+        throw new Error(`Unknown visualisation ${visualisationId}`);
+      }
+
+    },
+
+    nextVisualisation({ state }) {
+
+      const visualizations = state.visualizations;
+      const visualizationId = state.selectedVisualizationId;
+      const ids = Object.keys(visualizations);
+      const indexOfCurrent = ids.indexOf(visualizationId);
+      const nextIndex = (indexOfCurrent + 1) % (ids.length - 1);
+
+      const nextVizualisationId = ids[nextIndex];
+      router.push({ path: '/' });
+      setImmediate(() => {
+    
