@@ -66,4 +66,35 @@
         </h2>
         <v-card-text>
           <v-btn
-            :hre
+            :href="link.osx"
+            color="info"
+          >
+            OSX
+              <span style="margin-left: 15px">
+                <v-icon>cloud_download</v-icon>
+              </span>
+          </v-btn>
+        </v-card-text>
+
+        <h2 class="headline">
+          Code
+        </h2>
+        <v-card-text>
+          Made with 💜 by
+          <a
+            href="https://github.com/julesgoullee"
+            target="_blank"
+          >@julesgoullee
+          </a>
+          &amp;
+          <a
+            href="https://github.com/pakokrew"
+            target="_blank"
+          >
+            @pakokrew
+          </a>
+
+          <br>
+          We're Open Source ;)
+          <a
+            href="https://github.com/julesgoullee/shaders-mi
