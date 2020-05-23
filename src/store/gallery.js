@@ -68,4 +68,26 @@ const GalleryModule = {
       const nextVizualisationId = ids[nextIndex];
       router.push({ path: '/' });
       setImmediate(() => {
-    
+        router.push({ path: `/shader/${nextVizualisationId}` });
+      });
+
+    },
+
+    goToGallery() {
+
+      router.push({ path: '/' });
+
+    },
+
+  },
+
+  getters: {
+
+    visualizationsArray: state => Object.keys(state.visualizations).reduce((acc, vizId) => acc.concat(state.visualizations[vizId]), []),
+    selectedVisualization: state => state.selectedVisualizationId ? state.visualizations[state.selectedVisualizationId] : null,
+
+  },
+
+};
+
+export default GalleryModule;
