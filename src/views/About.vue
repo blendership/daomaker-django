@@ -48,4 +48,22 @@
           MIDI
         </h2>
         <v-card-text>
-          Animation par
+          Animation parameters can be controlled via a MIDI controller. <br>
+          Just plug your device and play with the encoders. Only Ableton Push controls have been mapped yet.<br>
+          Browser may request your permissions to access the hardware.
+        </v-card-text>
+
+        <h2 class="headline">
+          Link
+        </h2>
+        <v-card-text>
+          The animations can be synchronized to a tempo set by Link, available in Ableton Live and Traktor. <br>
+          Please refer to the documentation on the repository for further informations.
+        </v-card-text>
+
+        <h2 class="headline">
+          Download
+        </h2>
+        <v-card-text>
+          <v-btn
+            :hre
