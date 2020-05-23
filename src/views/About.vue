@@ -97,4 +97,30 @@
           <br>
           We're Open Source ;)
           <a
-            href="https://github.com/julesgoullee/shaders-mi
+            href="https://github.com/julesgoullee/shaders-midi"
+            target="_blank"
+          >https://github.com/julesgoullee/shaders-midi</a>
+        </v-card-text>
+      </v-container>
+    </v-card>
+  </v-container>
+</template>
+
+<style scoped>
+</style>
+
+<script>
+
+  import Config from '@/../config';
+
+  export default {
+    name: 'AboutView',
+    data: function(){
+      return {
+        link: {
+          osx: Config.ELECTRON_APP_LINK.OSX
+        }
+      }
+    }
+  }
+</script>
