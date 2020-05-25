@@ -60,4 +60,23 @@ describe('Components: Loaders', function (){
 
     it('Should not request access and listen if is connected on mount', async () => {
 
-      th
+      this.stubs.getters.midiHardwareConnected.returns(true);
+      const wrapper = shallowMount(MidiLoader, this.shallowConfig);
+      await waitNextTick(wrapper);
+
+      expect(wrapper.contains('#midi-loader') ).to.be.true;
+      expect(this.stubMidiRequestAccess.calledOnce).to.be.false;
+      expect(this.stubMidiListenStatus.calledOnce).to.be.false;
+
+    });
+
+    it('Should not listen if is already listenning', async () => {
+
+      Midi.isListening = true;
+
+      const wrapper = shallowMount(MidiLoader, this.shallowConfig);
+      await waitNextTick(wrapper);
+
+      expect(wrapper.contains('#midi-loader') ).to.be.true;
+      expect(this.stubMidiRequestAccess.calledOnce).to.be.true;
+      expect(this.
