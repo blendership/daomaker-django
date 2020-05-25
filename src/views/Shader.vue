@@ -66,4 +66,8 @@
     methods: {
       ...mapActions([
         'loadVisualisations',
-        'setVisualisation
+        'setVisualisation',
+      ]),
+    }
+  }
+</script>
