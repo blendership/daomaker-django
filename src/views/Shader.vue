@@ -34,4 +34,36 @@
   import ShaderControl from '@/components/ShaderControl.vue'
   import ShaderRender from '@/components/ShaderRender.vue'
   import ShaderParams from '@/components/ShaderParams.vue';
-  import Sh
+  import ShaderInfo from '@/components/ShaderInfo.vue';
+  import { mapState, mapActions, mapGetters } from 'vuex';
+
+  export default {
+    name: 'ShaderView',
+    components: {
+      ShaderParams,
+      ShaderRender,
+      ShaderControl,
+      ShaderInfo,
+    },
+    computed: {
+      ...mapGetters([
+        'selectedVisualization',
+      ]),
+      ...mapState([
+        'route',
+      ]),
+    },
+    mounted() {
+
+      assert(this.route.params && this.route.params.id, 'invalid_route');
+
+      const shaderId = this.route.params.id;
+
+      this.loadVisualisations();
+      this.setVisualisation(shaderId);
+
+    },
+    methods: {
+      ...mapActions([
+        'loadVisualisations',
+        'setVisualisation
