@@ -79,4 +79,10 @@ describe('Components: Loaders', function (){
 
       expect(wrapper.contains('#midi-loader') ).to.be.true;
       expect(this.stubMidiRequestAccess.calledOnce).to.be.true;
-      expect(this.
+      expect(this.stubMidiListenStatus.calledOnce).to.be.false;
+
+    });
+
+  });
+
+});
