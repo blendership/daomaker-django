@@ -50,4 +50,10 @@ describe('Components: ShaderRender', function (){
       const wrapper = shallowMount(ShaderRender, this.shallowConfig);
 
       wrapper.destroy();
-      expect(this.stubs.actions.stopShaderEngine.called
+      expect(this.stubs.actions.stopShaderEngine.calledOnce).to.be.true;
+
+    });
+
+  });
+
+});
