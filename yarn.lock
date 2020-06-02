@@ -458,4 +458,18 @@
 
 "@babel/plugin-transform-modules-commonjs@^7.2.0":
   version "7.4.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.4.0.tgz#3b8ec61714d3b75d20c5ccfa157f2c2
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.4.0.tgz#3b8ec61714d3b75d20c5ccfa157f2c2e087fd4ca"
+  integrity sha512-iWKAooAkipG7g1IY0eah7SumzfnIT3WNhT4uYB2kIsvHnNSB6MDYVa5qyICSwaTBDBY2c4SnJ3JtEa6ltJd6Jw==
+  dependencies:
+    "@babel/helper-module-transforms" "^7.1.0"
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/helper-simple-access" "^7.1.0"
+
+"@babel/plugin-transform-modules-systemjs@^7.3.4":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-systemjs/-/plugin-transform-modules-systemjs-7.4.0.tgz#c2495e55528135797bc816f5d50f851698c586a1"
+  integrity sha512-gjPdHmqiNhVoBqus5qK60mWPp1CmYWp/tkh11mvb0rrys01HycEGD7NvvSoKXlWEfSM9TcL36CpsK8ElsADptQ==
+  dependencies:
+    "@babel/helper-hoist-variables" "^7.4.0"
+    "@babel/helper-plugin-utils" "^7.0.0"
+
