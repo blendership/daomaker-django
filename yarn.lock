@@ -484,4 +484,17 @@
 "@babel/plugin-transform-named-capturing-groups-regex@^7.3.0":
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-named-capturing-groups-regex/-/plugin-transform-named-capturing-groups-regex-7.4.2.tgz#800391136d6cbcc80728dbdba3c1c6e46f86c12e"
-  integrity s
+  integrity sha512-NsAuliSwkL3WO2dzWTOL1oZJHm0TM8ZY8ZSxk2ANyKkt5SQlToGA4pzctmq1BEjoacurdwZ3xp2dCQWJkME0gQ==
+  dependencies:
+    regexp-tree "^0.1.0"
+
+"@babel/plugin-transform-new-target@^7.0.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-new-target/-/plugin-transform-new-target-7.4.0.tgz#67658a1d944edb53c8d4fa3004473a0dd7838150"
+  integrity sha512-6ZKNgMQmQmrEX/ncuCwnnw1yVGoaOW5KpxNhoWI7pCQdA0uZ0HqHGqenCUIENAnxRjy2WwNQ30gfGdIgqJXXqw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+
+"@babel/plugin-transform-object-super@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.2.0.tgz#b35d4c10f56ba
