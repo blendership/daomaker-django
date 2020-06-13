@@ -833,4 +833,16 @@
 
 "@vue/babel-sugar-functional-vue@^1.0.0-beta.3":
   version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@vue/babel
+  resolved "https://registry.yarnpkg.com/@vue/babel-sugar-functional-vue/-/babel-sugar-functional-vue-1.0.0-beta.3.tgz#41a855786971dacbbe8044858eefe98de089bf12"
+  integrity sha512-CBIa0sQWn3vfBS2asfTgv0WwdyKvNTKtE/cCfulZ7MiewLBh0RlvvSmdK9BIMTiHErdeZNSGUGlU6JuSHLyYkQ==
+  dependencies:
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+
+"@vue/babel-sugar-inject-h@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@vue/babel-sugar-inject-h/-/babel-sugar-inject-h-1.0.0-beta.3.tgz#be1d00b74a1a89fed35a9b1415a738c36f125966"
+  integrity sha512-HKMBMmFfdK9GBp3rX2bHIwILBdgc5F3ahmCB72keJxzaAQrgDAnD+ho70exUge+inAGlNF34WsQcGPElTf9QZg==
+  dependencies:
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+
+"@vue/babel-sugar-v-model@^1.0.
