@@ -715,4 +715,19 @@
 "@sinonjs/commons@^1", "@sinonjs/commons@^1.0.2", "@sinonjs/commons@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.4.0.tgz#7b3ec2d96af481d7a0321252e7b1c94724ec5a78"
-  integrity sha512-9jHK3YF/8HtJ9wCAbG+j8cD0i0+ATS9A7gXFqS3
+  integrity sha512-9jHK3YF/8HtJ9wCAbG+j8cD0i0+ATS9A7gXFqS36TblLPNy6rEEc+SB0imo91eCboGaBYGV/MT1/br/J+EE7Tw==
+  dependencies:
+    type-detect "4.0.8"
+
+"@sinonjs/formatio@^3.1.0", "@sinonjs/formatio@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@sinonjs/formatio/-/formatio-3.2.1.tgz#52310f2f9bcbc67bdac18c94ad4901b95fde267e"
+  integrity sha512-tsHvOB24rvyvV2+zKMmPkZ7dXX6LSLKZ7aOtXY6Edklp0uRcgGpOsQTTGTcWViFyx4uhWc6GV8QdnALbIbIdeQ==
+  dependencies:
+    "@sinonjs/commons" "^1"
+    "@sinonjs/samsam" "^3.1.0"
+
+"@sinonjs/samsam@^3.1.0", "@sinonjs/samsam@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@sinonjs/samsam/-/samsam-3.3.1.tgz#e88c53fbd9d91ad9f0f2b0140c16c7c107fe0d07"
+  integrity sha512-wRSfmyd81swH0hA1bxJZJ57xr22kC07a1N4
