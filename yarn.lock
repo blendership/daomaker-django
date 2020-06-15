@@ -874,4 +874,22 @@
 "@vue/cli-plugin-babel@^3.5.3":
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-3.5.3.tgz#6e8de8f60904bcc1884dbe10ee0d617ddd93af04"
-  integrity sha512-N0EJV+AdY5QnpGXEC
+  integrity sha512-N0EJV+AdY5QnpGXECbv3kEpBjcKZSKy7bRkOOxpvIVHOtNYMdp0TXI5ibfuCAs53CAufcuJwm1CqeQA8uELv1w==
+  dependencies:
+    "@babel/core" "^7.0.0"
+    "@vue/babel-preset-app" "^3.5.3"
+    "@vue/cli-shared-utils" "^3.5.1"
+    babel-loader "^8.0.5"
+    webpack ">=4 < 4.29"
+
+"@vue/cli-plugin-e2e-cypress@^3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-e2e-cypress/-/cli-plugin-e2e-cypress-3.5.1.tgz#68876d0c4bc64cda9970f7a67d5cd3e18bb26fac"
+  integrity sha512-93BtO+hwSC/HDn+WP7/i56/IvVszpALRXWh8G1re7+wukRqaQICeH8J4eJJanR3Bfvdp7tSa3wyxJ6drMavYoQ==
+  dependencies:
+    "@vue/cli-shared-utils" "^3.5.1"
+    cypress "^3.1.5"
+    eslint-plugin-cypress "^2.2.1"
+
+"@vue/cli-plugin-eslint@^3.5.1":
+  versio
