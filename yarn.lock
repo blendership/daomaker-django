@@ -972,4 +972,25 @@
     slash "^2.0.0"
     source-map-url "^0.4.0"
     ssri "^6.0.1"
-    string.prototype.padend "
+    string.prototype.padend "^3.0.0"
+    terser-webpack-plugin "^1.2.2"
+    thread-loader "^2.1.2"
+    url-loader "^1.1.2"
+    vue-loader "^15.6.4"
+    webpack ">=4 < 4.29"
+    webpack-bundle-analyzer "^3.0.4"
+    webpack-chain "^4.11.0"
+    webpack-dev-server "^3.2.0"
+    webpack-merge "^4.2.1"
+    yorkie "^2.0.0"
+
+"@vue/cli-shared-utils@^3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.5.1.tgz#71d66f06fc619ba28df279bd7d37ba1ba29c9066"
+  integrity sha512-hCB7UbKeeC41w2Q8+Q7jmw3gHdq+ltRqp80S3uDRRGxwiOhxrSmdBHMzKUjh01L8bXOBRgvLey+BERi1Nj9n6Q==
+  dependencies:
+    chalk "^2.4.1"
+    execa "^1.0.0"
+    joi "^14.3.0"
+    launch-editor "^2.2.1"
+   
