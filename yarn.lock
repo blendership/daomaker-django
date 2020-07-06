@@ -1547,4 +1547,24 @@ anymatch@^2.0.0:
 app-builder-bin@2.6.4:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/app-builder-bin/-/app-builder-bin-2.6.4.tgz#011cd9e7e144d52b43fffa15aff8039804d3078a"
-  integrity sha512-wC9HYqiC1XqpunT/9y2VuF90KbarnIHL90Tv8BD3TITTgbVIdRTXAsvWvmaR/ImvAX0+l5Z3jZtXjdJ7Pw3bL
+  integrity sha512-wC9HYqiC1XqpunT/9y2VuF90KbarnIHL90Tv8BD3TITTgbVIdRTXAsvWvmaR/ImvAX0+l5Z3jZtXjdJ7Pw3bLQ==
+
+app-builder-lib@20.39.0, app-builder-lib@~20.39.0:
+  version "20.39.0"
+  resolved "https://registry.yarnpkg.com/app-builder-lib/-/app-builder-lib-20.39.0.tgz#197faba9cd7c32005d3882e6add051c4e182fdc3"
+  integrity sha512-lkxGyBrQwueYb3ViqHt5WjyzVVBQqXMXc7TF+JqkuuUWp5DF7SXAYZYd+rsR3gmCbdNxw4SPIEmWmm+I9LK2gw==
+  dependencies:
+    "7zip-bin" "~4.1.0"
+    app-builder-bin "2.6.4"
+    async-exit-hook "^2.0.1"
+    bluebird-lst "^1.0.7"
+    builder-util "9.7.0"
+    builder-util-runtime "8.2.0"
+    chromium-pickle-js "^0.2.0"
+    debug "^4.1.1"
+    ejs "^2.6.1"
+    electron-osx-sign "0.4.11"
+    electron-publish "20.39.0"
+    fs-extra-p "^7.0.1"
+    hosted-git-info "^2.7.1"
+    is-ci "^2
