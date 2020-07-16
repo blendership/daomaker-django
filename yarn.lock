@@ -2021,4 +2021,17 @@ block-stream@*:
 
 bluebird-lst@^1.0.6, bluebird-lst@^1.0.7:
   version "1.0.7"
-  resolved "https://registry.yarnpkg.com/bluebird-
+  resolved "https://registry.yarnpkg.com/bluebird-lst/-/bluebird-lst-1.0.7.tgz#f0babade9ef1dce3989b603f3796ff3b16b90d50"
+  integrity sha512-5ix04IbXVIZ6nSRM4aZnwQfk40Td0D57WAl8LfhnICF6XwT4efCZYh0veOHvfDmgpbqE4ju5L5XEAMIcAe13Kw==
+  dependencies:
+    bluebird "^3.5.3"
+
+bluebird@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.0.tgz#791420d7f551eea2897453a8a77653f96606d67c"
+  integrity sha1-eRQg1/VR7qKJdFOop3ZT+WYG1nw=
+
+bluebird@^3.1.1, bluebird@^3.4.0, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.3.tgz#7d01c6f9616c9a51ab0f8c549a79dfe6ec33efa7"
+  integrity sha512-/qKPUQlaW1OyR51WeCPBvRnAlnZFUJkCSG5HzGnuIqhgyJtF+T94lFnn33eiazjRm2LA
