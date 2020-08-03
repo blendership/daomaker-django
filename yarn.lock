@@ -2820,4 +2820,24 @@ component-emitter@1.2.1, component-emitter@^1.2.1:
 
 component-inherit@0.0.3:
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/component-inherit/-/component-inherit-0.0.3.tgz#645fc4adf58b72b649d5c
+  resolved "https://registry.yarnpkg.com/component-inherit/-/component-inherit-0.0.3.tgz#645fc4adf58b72b649d5cae65135619db26ff143"
+  integrity sha1-ZF/ErfWLcrZJ1crmUTVhnbJv8UM=
+
+compress-commons@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/compress-commons/-/compress-commons-1.2.2.tgz#524a9f10903f3a813389b0225d27c48bb751890f"
+  integrity sha1-UkqfEJA/OoEzibAiXSfEi7dRiQ8=
+  dependencies:
+    buffer-crc32 "^0.2.1"
+    crc32-stream "^2.0.0"
+    normalize-path "^2.0.0"
+    readable-stream "^2.0.0"
+
+compressible@~2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.16.tgz#a49bf9858f3821b64ce1be0296afc7380466a77f"
+  integrity sha512-JQfEOdnI7dASwCuSPWIeVYwc/zMsu/+tRhoUvEfXz2gxOA2DNjmG5vhtFdBlhWPPGo+RdT9S3tgc/uH5qgDiiA==
+  dependencies:
+    mime-db ">= 1.38.0 < 2"
+
+compression@^1.
