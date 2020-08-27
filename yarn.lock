@@ -3878,4 +3878,25 @@ electron-to-chromium@^1.3.116:
 electron@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/electron/-/electron-4.1.2.tgz#dc8be0f219c73d60a97675d6d3c5b040c4f50513"
-  integrity sha512-QWz298CaH2jLyFVje01sj4fSEd
+  integrity sha512-QWz298CaH2jLyFVje01sj4fSEdXJj+oKVw2jNUovrhZE5jmFE4cr/KqZ7iHX00DG6AwmDF4W1Xrv0V+aQOkieQ==
+  dependencies:
+    "@types/node" "^10.12.18"
+    electron-download "^4.1.0"
+    extract-zip "^1.0.3"
+
+elegant-spinner@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/elegant-spinner/-/elegant-spinner-1.0.1.tgz#db043521c95d7e303fd8f345bedc3349cfb0729e"
+  integrity sha1-2wQ1IcldfjA/2PNFvtwzSc+wcp4=
+
+elliptic@^6.0.0:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.1.tgz#c2d0b7776911b86722c632c3c06c60f2f819939a"
+  integrity sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==
+  dependencies:
+    bn.js "^4.4.0"
+    brorand "^1.0.1"
+    hash.js "^1.0.0"
+    hmac-drbg "^1.0.0"
+    inherits "^2.0.1"
+    minimal
