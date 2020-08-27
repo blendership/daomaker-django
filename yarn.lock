@@ -3781,4 +3781,23 @@ ejs@~2.5.6:
 
 electron-builder@^20.29.0:
   version "20.39.0"
-  resolved "https://registry.yarnpkg.com/electron-builder/-/elec
+  resolved "https://registry.yarnpkg.com/electron-builder/-/electron-builder-20.39.0.tgz#ab2f5b556f36dea3947eb43ef312a955ba7f9d16"
+  integrity sha512-50SNZ/G+iE9MpTwxzeHt1Cqg8jZKeFLuJ9wubR4e/8VIzAe0ERUmwAQw+77UrlwXZD/PKKoYblc0Sr08Vm4exg==
+  dependencies:
+    app-builder-lib "20.39.0"
+    bluebird-lst "^1.0.7"
+    builder-util "9.7.0"
+    builder-util-runtime "8.2.0"
+    chalk "^2.4.2"
+    dmg-builder "6.6.0"
+    fs-extra-p "^7.0.1"
+    is-ci "^2.0.0"
+    lazy-val "^1.0.4"
+    read-config-file "3.2.2"
+    sanitize-filename "^1.6.1"
+    update-notifier "^2.5.0"
+    yargs "^13.2.1"
+
+electron-chromedriver@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/electron-chromedriver/-/electron-chromedriver-3.0.0.tgz#ec0a17badb6c3529813c660bf91a
