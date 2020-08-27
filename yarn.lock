@@ -3823,4 +3823,20 @@ electron-download@^4.1.0:
 
 electron-icon-builder@^1.0.0:
   version "1.0.0"
-  resolved "h
+  resolved "https://registry.yarnpkg.com/electron-icon-builder/-/electron-icon-builder-1.0.0.tgz#54ca38a05dd1c302eaaa79eaa4ee652facc6ab88"
+  integrity sha512-JEuZxpg4DlGbny7O9y/hiAbekUt9GN7VKtARPV3HsT70R/OBpKImn+e4UemJ0CJLi10g6v+7kxrBk5SadXlR0w==
+  dependencies:
+    args "^2.3.0"
+    icon-gen "1.0.7"
+    jimp "^0.2.27"
+
+electron-osx-sign@0.4.11:
+  version "0.4.11"
+  resolved "https://registry.yarnpkg.com/electron-osx-sign/-/electron-osx-sign-0.4.11.tgz#8377732fe7b207969f264b67582ee47029ce092f"
+  integrity sha512-VVd40nrnVqymvFrY9ZkOYgHJOvexHHYTR3di/SN+mjJ0OWhR1I8BRVj3U+Yamw6hnkZZNKZp52rqL5EFAAPFkQ==
+  dependencies:
+    bluebird "^3.5.0"
+    compare-version "^0.1.2"
+    debug "^2.6.8"
+    isbinaryfile "^3.0.2"
+    minimist "^1
