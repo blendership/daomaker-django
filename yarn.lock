@@ -4614,4 +4614,24 @@ file-type@^3.1.0:
 
 file-url@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/file-url/-/file-url-1.1.0.tgz#a
+  resolved "https://registry.yarnpkg.com/file-url/-/file-url-1.1.0.tgz#a0f9cf3eb6904c9b1d3a6790b83a976fc40217bb"
+  integrity sha1-oPnPPraQTJsdOmeQuDqXb8QCF7s=
+  dependencies:
+    meow "^3.7.0"
+
+filesize@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/filesize/-/filesize-3.6.1.tgz#090bb3ee01b6f801a8a8be99d31710b3422bb317"
+  integrity sha512-7KjR1vv6qnicaPMi1iiTcI85CyYwRO/PSFCu6SvqL8jN2Wjt/NIYQTFtFs7fSDCYOstUkEWIQGFUg5YZQfjlcg==
+
+fill-range@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-4.0.0.tgz#d544811d428f98eb06a63dc402d2403c328c38f7"
+  integrity sha1-1USBHUKPmOsGpj3EAtJAPDKMOPc=
+  dependencies:
+    extend-shallow "^2.0.1"
+    is-number "^3.0.0"
+    repeat-string "^1.6.1"
+    to-regex-range "^2.1.0"
+
+fina
