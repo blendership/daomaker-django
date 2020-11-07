@@ -6409,4 +6409,23 @@ lazy-ass@1.6.0:
 lazy-val@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/lazy-val/-/lazy-val-1.0.4.tgz#882636a7245c2cfe6e0a4e3ba6c5d68a137e5c65"
-  integrity sha512-u93kb2fPbIrfzBuLjZE+w+fJbUUMhNDXxNmMfaqNgpfQf1CO5ZSe2LfsnBqVAk7i
+  integrity sha512-u93kb2fPbIrfzBuLjZE+w+fJbUUMhNDXxNmMfaqNgpfQf1CO5ZSe2LfsnBqVAk7i/2NF48OSoRj+Xe2VT+lE8Q==
+
+lazystream@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/lazystream/-/lazystream-1.0.0.tgz#f6995fe0f820392f61396be89462407bb77168e4"
+  integrity sha1-9plf4PggOS9hOWvolGJAe7dxaOQ=
+  dependencies:
+    readable-stream "^2.0.5"
+
+lcid@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
+  integrity sha1-MIrMr6C8SDo4Z7S28rlQYlHRuDU=
+  dependencies:
+    invert-kv "^1.0.0"
+
+lcid@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/lcid/-/lcid-2.0.0.tgz#6ef5d2df60e52f82eb228a4c373e8d1f397253cf"
+  integrity sha512-avPEb8P8EGnwXKClwsNUg
