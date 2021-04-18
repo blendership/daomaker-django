@@ -7029,4 +7029,27 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
 
 mocha-webpack@^2.0.0-beta.0:
   version "2.0.0-beta.0"
-  resolved "https://registry.y
+  resolved "https://registry.yarnpkg.com/mocha-webpack/-/mocha-webpack-2.0.0-beta.0.tgz#d85fc9a70f82a4ad595b7702a1181605dfa59549"
+  integrity sha512-2ezbW0h5cYWr874F/hzytQCqINxk+GVelMY4xWTSHwwH1LrPAOzjlUljZ+/PhpaP6QeqYbL5x5vK/bnaXqkfEw==
+  dependencies:
+    babel-runtime "^6.18.0"
+    chalk "^2.3.0"
+    chokidar "^2.0.2"
+    glob-parent "^3.1.0"
+    globby "^7.1.1"
+    interpret "^1.0.1"
+    is-glob "^4.0.0"
+    loader-utils "^1.1.0"
+    lodash "^4.3.0"
+    memory-fs "^0.4.1"
+    nodent-runtime "^3.0.3"
+    normalize-path "^2.0.1"
+    progress "^2.0.0"
+    source-map-support "^0.5.0"
+    strip-ansi "^4.0.0"
+    toposort "^1.0.0"
+    yargs "^11.0.0"
+
+mocha@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-5.2.0.tgz#6d8ae508f59167f94
