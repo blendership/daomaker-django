@@ -7957,4 +7957,23 @@ phantomjs-prebuilt@^2.1.10:
     progress "^1.1.8"
     request "^2.81.0"
     request-progress "^2.0.1"
-    which "^1.2.1
+    which "^1.2.10"
+
+phin@^2.9.1:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/phin/-/phin-2.9.3.tgz#f9b6ac10a035636fb65dfc576aaaa17b8743125c"
+  integrity sha512-CzFr90qM24ju5f88quFC/6qohjC144rehe5n6DH900lgXmUe86+xCKc10ev56gRKC4/BkHUoG4uSiQgBiIXwDA==
+
+pify@^2.0.0, pify@^2.2.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
+  integrity sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
+
+pify@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
+  integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
+
+pify@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c5
