@@ -8631,4 +8631,28 @@ read-chunk@^1.0.1:
 
 read-config-file@3.2.2:
   version "3.2.2"
-  resolved "https://registry.yarnpkg.com/read-config-file/-/read-config-file-3.2.2.tgz#57bbff7dd97caf237d0d625bd541c6d0efb4
+  resolved "https://registry.yarnpkg.com/read-config-file/-/read-config-file-3.2.2.tgz#57bbff7dd97caf237d0d625bd541c6d0efb4d067"
+  integrity sha512-PuFpMgZF01VB0ydH1dfitAxCP/fh+qnfbA9cYNIPoxPbz0SMngsrafCtaHDWfER7MwlDz4fmrNBhPkakxxFpTg==
+  dependencies:
+    ajv "^6.9.2"
+    ajv-keywords "^3.4.0"
+    bluebird-lst "^1.0.7"
+    dotenv "^6.2.0"
+    dotenv-expand "^4.2.0"
+    fs-extra-p "^7.0.1"
+    js-yaml "^3.12.1"
+    json5 "^2.1.0"
+    lazy-val "^1.0.4"
+
+read-pkg-up@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-1.0.1.tgz#9d63c13276c065918d57f002a57f40a1b643fb02"
+  integrity sha1-nWPBMnbAZZGNV/ACpX9AobZD+wI=
+  dependencies:
+    find-up "^1.0.0"
+    read-pkg "^1.0.0"
+
+read-pkg@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-1.1.0.tgz#f5ffaa5ecd29cb31c0474bca7d756b6bb29e3f28"
+  i
