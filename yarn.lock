@@ -9649,4 +9649,22 @@ stackframe@^1.0.4:
 
 stat-mode@^0.2.2:
   version "0.2.2"
-  resolve
+  resolved "https://registry.yarnpkg.com/stat-mode/-/stat-mode-0.2.2.tgz#e6c80b623123d7d80cf132ce538f346289072502"
+  integrity sha1-5sgLYjEj19gM8TLOU480YokHJQI=
+
+static-extend@^0.1.1:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/static-extend/-/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
+  integrity sha1-YICcOcv/VTNyJv1eC1IPNB8ftcY=
+  dependencies:
+    define-property "^0.2.5"
+    object-copy "^0.1.0"
+
+stats.js@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stats.js/-/stats.js-1.0.0.tgz#ca304e56b116a3f46413acc349eb6eee19df688e"
+  integrity sha1-yjBOVrEWo/RkE6zDSetu7hnfaI4=
+
+"statuses@>= 1.4.0 < 2":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa993814
