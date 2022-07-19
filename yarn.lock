@@ -9947,4 +9947,27 @@ supports-color@~5.0.0:
 
 svg-tags@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b
+  resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
+  integrity sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=
+
+svg2png@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/svg2png/-/svg2png-4.1.0.tgz#68e85fc9d0784dc041f97d2a28815405acd56217"
+  integrity sha1-aOhfydB4TcBB+X0qKIFUBazVYhc=
+  dependencies:
+    file-url "^1.1.0"
+    phantomjs-prebuilt "^2.1.10"
+    pn "^1.0.0"
+    yargs "^5.0.0"
+
+svgo@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.2.0.tgz#305a8fc0f4f9710828c65039bb93d5793225ffc3"
+  integrity sha512-xBfxJxfk4UeVN8asec9jNxHiv3UAMv/ujwBWGYvQhhMb2u3YTGKkiybPcLFDLq7GLLWE9wa73e0/m8L5nTzQbw==
+  dependencies:
+    chalk "^2.4.1"
+    coa "^2.0.2"
+    css-select "^2.0.0"
+    css-select-base-adapter "^0.1.1"
+    css-tree "1.0.0-alpha.28"
+    css-url-regex "^1.
