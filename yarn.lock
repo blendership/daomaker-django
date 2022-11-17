@@ -10626,4 +10626,17 @@ vue-analytics@^5.16.4:
 
 vue-cli-plugin-dll@^1.1.6:
   version "1.1.6"
-  resolved "https://registry.yarnpkg.com/vue-cli-
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-dll/-/vue-cli-plugin-dll-1.1.6.tgz#1168f8c521e58b28ccd6b02ddd1425c87776a05e"
+  integrity sha512-8nzV7H/pj00aFKJUqqnvNjMw5kf4E3GTFSZ62XF2Q7ufIqdrlfs4vHMMI5GwEXqX6tt8i20Dp8f5LalLN0/DBw==
+  dependencies:
+    add-asset-html-webpack-plugin "^3.1.2"
+    friendly-errors-webpack-plugin "^1.7.0"
+    mini-css-extract-plugin "^0.5.0"
+    vue-loader "^15.7.0"
+
+vue-cli-plugin-electron-builder@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-electron-builder/-/vue-cli-plugin-electron-builder-1.2.0.tgz#4bfb1eae446eee13d59010a7f7876a8051aa0201"
+  integrity sha512-gwoPk4qyACzhFYdmAHZM8/42IXVidGjF2/41SXnvEtokNmxdbBJ499zEZoeP/2sHVi7gnyxuq06Vml9C2MZrtw==
+  dependencies:
+    electron-
